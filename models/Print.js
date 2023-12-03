@@ -2,8 +2,9 @@ const mongoose = require("mongoose");
 
 const printSchema = new mongoose.Schema(
   {
-    number_page: {
+    print_name: {
       type: String,
+      required: true,
     },
     build_name: {
       type: String,
@@ -13,7 +14,7 @@ const printSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    address: {
+    number_page: {
       type: String,
     },
     page_balance: {
@@ -23,6 +24,9 @@ const printSchema = new mongoose.Schema(
     trademark : {
         type: String,
     },
+    status : {
+      type: String,
+  },
   },
   { timestamps: true }
 );
