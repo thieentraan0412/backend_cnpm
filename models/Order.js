@@ -6,16 +6,18 @@ const orderSchema = new mongoose.Schema(
       type: String,
     },
     number_page: {
-        type: String,
-      },
+      type: String,
+    },
+    type_page: {
+      type: String,
+    },
     price: {
       type: String,
     },
     status: {
-        type: String,
-      },
+      type: String,
+    },
   },
   { timestamps: true }
 );
-
 module.exports = mongoose.model("Order", orderSchema);

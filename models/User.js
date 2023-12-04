@@ -23,9 +23,13 @@ const userSchema = new mongoose.Schema(
     address: {
       type: String,
     },
-    page_balance: {
+    A3_page_balance: {
       type: String,
-      default: 0,
+      default: 20,
+    },
+    A4_page_balance: {
+      type: String,
+      default: 20,
     },
     sex: {
       type: String,

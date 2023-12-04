@@ -2,10 +2,6 @@ const mongoose = require("mongoose");
 
 const printSchema = new mongoose.Schema(
   {
-    print_name: {
-      type: String,
-      required: true,
-    },
     build_name: {
       type: String,
       required: true,

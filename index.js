@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
+
 dotenv.config();
 
 mongoose.connect(process.env.MONGODB_URL, () => {
